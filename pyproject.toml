@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "auto-ml"
+version = "0.0.0"
+description = "AutoML pipeline"
+readme = "README.md"
+requires-python = ">=3.10"
+
+[tool.setuptools]
+packages = [
+  "automl_lib",
+  "automl_lib.types",
+  "automl_lib.plugins",
+  "automl_lib.training",
+  "automl_lib.clearml",
+  "automl_lib.inference",
+  "automl_lib.preprocessing",
+  "automl_lib.phases",
+  "automl_lib.data",
+  "automl_lib.phases.training",
+  "automl_lib.phases.data_registration",
+  "automl_lib.phases.data_editing",
+  "automl_lib.phases.inference",
+  "automl_lib.phases.comparison",
+  "automl_lib.phases.preprocessing",
+]
