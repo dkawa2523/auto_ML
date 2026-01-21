@@ -8,6 +8,22 @@ version = "0.0.0"
 description = "AutoML pipeline"
 readme = "README.md"
 requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.20",
+  "pandas>=1.5",
+  "scikit-learn>=1.2",
+  "scipy>=1.9",
+  "joblib>=1.2",
+  "PyYAML>=6.0",
+  "pydantic>=2.6",
+  "optuna>=3.0",
+  "matplotlib>=3.7",
+  "plotly>=5.0",
+]
+
+[project.optional-dependencies]
+shap = ["shap>=0.42"]
+boost = ["xgboost", "lightgbm", "catboost"]
 
 [tool.setuptools]
 packages = [
